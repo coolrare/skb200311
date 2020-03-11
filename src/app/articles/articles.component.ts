@@ -11,6 +11,9 @@ export class ArticlesComponent implements OnInit {
   @Input()
   list = [];
 
+  @Input()
+  condition = '';
+
   constructor() { }
 
   ngOnInit(): void {

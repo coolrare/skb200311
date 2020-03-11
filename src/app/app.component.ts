@@ -11,6 +11,7 @@ export class AppComponent {
   title = 'conduit';
   subtitle = 'A place to share your <u>knowledge</u>.';
 
+  keyword = '';
   data: Post[] = [{
     title: 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit',
     slug: 'zp7yqc',
