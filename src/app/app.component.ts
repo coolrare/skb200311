@@ -1,5 +1,5 @@
 // tslint:disable max-line-length
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Post } from './shared/Post';
 
 @Component({
@@ -7,7 +7,7 @@ import { Post } from './shared/Post';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'conduit';
   subtitle = 'A place to share your <u>knowledge</u>.';
 
@@ -62,4 +62,14 @@ export class AppComponent {
     favoritesCount: 5
   }];
 
+  filtered = [];
+
+  ngOnInit(): void {
+    this.filtered = this.data;
+  }
+
+  doSearch(keyword: string) {
+    this.keyword = keyword;
+    this.filtered = this.data.filter(value => value.title.indexOf(keyword) >= 0);
+  }
 }
