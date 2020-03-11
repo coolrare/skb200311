@@ -1,5 +1,5 @@
 // tslint:disable max-line-length
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-articles',
@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticlesComponent implements OnInit {
 
+  @Input()
   list = [];
 
   constructor() { }

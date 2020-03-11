@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'conduit';
   subtitle = 'A place to share your <u>knowledge</u>.';
 
-  list: Post[] = [{
+  data: Post[] = [{
     title: 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit',
     slug: 'zp7yqc',
     body: 'laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium',
