@@ -6495,3 +6495,7 @@ a.text-danger:hover {
     display: none !important
   }
 }
+
+.error {
+  border: 1px dotted red;
+}
