@@ -1,4 +1,5 @@
-<input #tKeyword class="form-control form-control-sm search-input" type="text" placeholder="Keyword" (keyup.escape)="tKeyword.value='';" (keyup.enter)="doSearch(tKeyword.value)">
-<button class="btn btn-sm btn-primary" (click)="doSearch(tKeyword.value)">
+<input class="form-control form-control-sm search-input" type="text" placeholder="Keyword" [(ngModel)]="keyword" (keyup.escape)="keyword='';" (keyup.enter)="doSearch(keyword)">
+<button class="btn btn-sm btn-primary" (click)="doSearch(keyword)">
   <i class="ion-search"></i>
 </button>
+{{keyword}}
